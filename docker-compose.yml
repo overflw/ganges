@@ -52,7 +52,7 @@ services:
     hostname: rest-proxy
     container_name: rest-proxy
     depends_on:
-      - streams
+      - anoniks
     environment:
       KAFKA_REST_HOST_NAME: rest-proxy
       KAFKA_REST_LISTENERS: "http://0.0.0.0:8082"
@@ -70,4 +70,4 @@ services:
     ports:
       - "8080:80"
     depends_on:
-      - streams
+      - anoniks
