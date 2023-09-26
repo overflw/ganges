@@ -1,4 +1,4 @@
-FROM maven:3.9.4-amazoncorretto-20
+FROM maven:3.8-amazoncorretto-17
 COPY ./ /home
 WORKDIR /home
 RUN mvn clean install -DskipTests
